@@ -74,4 +74,27 @@ CREATE TABLE phone_book (
 \d
 \d phone_book
 ```
-
+## INSERT
+```
+INSERT INTO phone_book VALUES (1, 'mohsen', 'sami', '989033451850');
+INSERT INTO phone_book (first_name, last_name, phone_number) VALUES ('mohsen', 'sami', '989033451850');
+SELECT * FROM phone_book;
+DELETE FROM phone_book;
+```
+## READING
+```
+SELECT * FROM phone_book;
+SELECT first_name AS "First Name", last_name, phone_number FROM phone_book;
+SELECT CONCAT(first_name, ' ', last_name) AS "Full Name" FROM phone_book;
+```
+```
+SELECT * FROM phone_book WHERE LOWER(first_name) = 'mohsen';
+EXPLAIN ANALYZE SELECT * FROM phone_book WHERE LOWER(first_name) = 'mohsen';
+SELECT * FROM phone_book WHERE ID < 5 ORDER BY last_name ASC;
+SELECT * FROM phone_book LIMIT 10;
+SELECT * FROM phone_book OFFSET 10;
+```
+## Update
+```
+UPDATE phone_book SET first_name=name WHERE id=2;
+```
