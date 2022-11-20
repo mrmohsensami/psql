@@ -1,4 +1,5 @@
 # psql - RDBMS - Relational Database Management System
+SQL - Structured Query Language
 ```
 \du
 \l
@@ -37,7 +38,7 @@ where option can be:
 ```
 ```
 CREATE ROLE mohsen WITH SUPERUSER LOGIN;
- CREATE ROLE sami WITH SUPERUSER LOGIN password '123';
+CREATE ROLE sami WITH SUPERUSER LOGIN password '123';
 CREATE ROLE test WITH LOGIN;
 DROP ROLE rest;
 ```
