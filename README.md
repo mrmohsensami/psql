@@ -94,7 +94,12 @@ SELECT * FROM phone_book WHERE ID < 5 ORDER BY last_name ASC;
 SELECT * FROM phone_book LIMIT 10;
 SELECT * FROM phone_book OFFSET 10;
 ```
-## Update
+## UPDATE
 ```
 UPDATE phone_book SET first_name=name WHERE id=2;
+```
+## DELETE
+```
+DELETE FROM phone_book WHERE id=2;
+SELECT COUNT(id) FROM phone_book;
 ```
