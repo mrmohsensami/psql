@@ -49,3 +49,29 @@ CREATE DATABASE mydb WITH OWNER = mohsen;
 \conninfo
 DROP DATABASE mydb;
 ```
+## Tables
+```
+CREATE TABLE name (
+      -- col_name col_datatype *col_options
+      id INTEGER PRIMARY KEY,
+      name VARCHAR(32)
+);
+```
+```
+\d
+\d names
+```
+exaple phone_book
+```
+CREATES DATABASE phone_book;
+\c phone_book;
+CREATE TABLE phone_book (
+      id SERIAL PRIMARY KEY,
+      first_name VARCHAR(32) NOT NULL,
+      last_name VARCHAR(32) NOT NULL,
+      phone_number CHAR(12) NOT NULL UNIQUE 
+);
+\d
+\d phone_book
+```
+
